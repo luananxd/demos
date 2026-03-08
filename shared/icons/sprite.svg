@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="arrow-back" viewBox="0 -960 960 960">
+    <path
+      d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"
+      fill="currentColor"
+    />
+  </symbol>
+
+  <symbol id="open-fullscreen" viewBox="0 -960 960 960">
+    <path
+      d="M120-120v-320h80v184l504-504H520v-80h320v320h-80v-184L256-200h184v80H120Z"
+      fill="currentColor"
+    />
+  </symbol>
+
+  <symbol id="close-fullscreen" viewBox="0 -960 960 960">
+    <path
+      d="m136-80-56-56 264-264H160v-80h320v320h-80v-184L136-80Zm344-400v-320h80v184l264-264 56 56-264 264h184v80H480Z"
+      fill="currentColor"
+    />
+  </symbol>
+
+  <symbol id="style" viewBox="0 -960 960 960">
+    <path
+      d="m159-168-34-14q-31-13-41.5-45t3.5-63l72-156v278Zm160 88q-33 0-56.5-23.5T239-160v-240l106 294q3 7 6 13.5t8 12.5h-40Zm206-4q-32 12-62-3t-42-47L243-622q-12-32 2-62.5t46-41.5l302-110q32-12 62 3t42 47l178 488q12 32-2 62.5T827-194L525-84Zm-57.5-487.5Q479-583 479-600t-11.5-28.5Q456-640 439-640t-28.5 11.5Q399-617 399-600t11.5 28.5Q422-560 439-560t28.5-11.5ZM497-160l302-110-178-490-302 110 178 490ZM319-650l302-110-302 110Z"
+      fill="currentColor"
+    />
+  </symbol>
+
+  <symbol id="star" viewBox="0 -960 960 960">
+    <path
+      d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"
+      fill="currentColor"
+    />
+  </symbol>
+</svg>

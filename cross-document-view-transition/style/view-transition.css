@@ -1,0 +1,103 @@
+@view-transition {
+  navigation: auto;
+}
+
+:root {
+  view-transition-name: none;
+}
+
+body {
+  view-transition-name: store;
+}
+
+::view-transition-group(store) {
+  animation-duration: 700ms;
+  animation-timing-function: linear;
+}
+
+:root[data-transition="reload"] {
+  &::view-transition-old(store) {
+    display: none;
+  }
+
+  &::view-transition-new(store) {
+    animation-name: reload;
+  }
+}
+
+:root[data-transition="forwards"] {
+  &::view-transition-old(store) {
+    animation-name: forwards-old;
+  }
+
+  &::view-transition-new(store) {
+    z-index: 1;
+    animation-name: forwards-new;
+  }
+}
+
+:root[data-transition="backwards"] {
+  &::view-transition-old(store) {
+    z-index: 1;
+    animation-name: backwards-old;
+  }
+
+  &::view-transition-new(store) {
+    animation-name: backwards-new;
+  }
+}
+
+@keyframes reload {
+  from {
+    translate: 0 200px;
+    opacity: 0;
+  }
+}
+
+@keyframes forwards-new {
+  from {
+    translate: 0 100dvh;
+    scale: 1.1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+@keyframes forwards-old {
+  from {
+    translate: 0 0;
+    scale: 1;
+  }
+
+  to {
+    translate: 0 200px;
+    scale: 0.8;
+  }
+}
+
+@keyframes backwards-new {
+  from {
+    translate: 0 200px;
+    scale: 0.8;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 1;
+  }
+}
+
+@keyframes backwards-old {
+  from {
+    translate: 0 0;
+    scale: 1;
+  }
+
+  to {
+    translate: 0 100dvh;
+    scale: 1.1;
+  }
+}

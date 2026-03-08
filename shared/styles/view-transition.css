@@ -1,0 +1,51 @@
+@view-transition {
+  navigation: auto;
+  types: navigation;
+}
+
+:root {
+  view-transition-name: none;
+}
+
+body {
+  view-transition-name: page;
+}
+
+::view-transition(page) {
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+
+html:active-view-transition-type(navigation) {
+  &::view-transition-new(page) {
+    animation-name: page-to;
+  }
+
+  &::view-transition-old(page) {
+    animation-name: page-from;
+  }
+}
+
+@keyframes page-to {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes page-from {
+  from {
+    opacity: 1;
+    scale: 1;
+  }
+
+  to {
+    opacity: 0;
+    scale: 0.5;
+  }
+}

@@ -1,0 +1,46 @@
+@import "./good-card.css";
+@import "./good-about.css";
+@import "./good-share.css";
+@import "./good-recommendations.css";
+@import "./good-reviews.css";
+@import "./good-rating.css";
+@import "./good-review.css";
+@import "./user-info.css";
+@import "./user-purchases.css";
+
+/* Goods Catalog */
+
+.goods-catalog__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.goods-catalog__card {
+  width: 100%;
+  height: 100%;
+}
+
+/* Good Page */
+
+.good-page {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+/* User Profile */
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+
+.user-profile__divider {
+  margin: 0;
+  color: LightGray;
+}

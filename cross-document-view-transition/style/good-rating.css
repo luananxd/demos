@@ -1,0 +1,42 @@
+.good-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  width: fit-content;
+}
+
+.good-rating__total {
+  margin-top: 4px;
+  margin-right: 8px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.good-rating__star {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  color: Gainsboro;
+}
+
+.good-rating__star--active {
+  color: Gold;
+}
+
+/* Small */
+
+.good-rating--small .good-rating__total {
+  order: 1;
+  margin-top: 2px;
+  margin-left: 8px;
+  margin-right: 0;
+  font-size: 16px;
+}
+
+.good-rating--small .good-rating__star {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+}

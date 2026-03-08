@@ -1,0 +1,25 @@
+.good-share {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.good-share__title {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.good-share__list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.good-share__item {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

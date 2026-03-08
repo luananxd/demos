@@ -1,0 +1,15 @@
+.default-button {
+  padding: 8px 12px;
+  font-size: inherit;
+  color: White;
+  text-decoration: none;
+  background-color: CornFlowerBlue;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.default-button:hover {
+  background-color: LightSkyBlue;
+}

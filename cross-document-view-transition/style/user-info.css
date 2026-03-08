@@ -1,0 +1,55 @@
+.user-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 48px;
+}
+
+.user-info__avatar {
+  width: 180px;
+  height: 180px;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.user-info__name {
+  margin-bottom: 4px;
+  font-size: 36px;
+}
+
+.user-info__nickname {
+  color: LightsLateGray;
+}
+
+.user-info__details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.user-info__bio {
+  width: 75%;
+  font-size: 20px;
+}
+
+.user-info__stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 75%;
+}
+
+.user-info__stat {
+  & dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: LightSlateGray;
+  }
+
+  & dd {
+    margin: 0;
+  }
+}

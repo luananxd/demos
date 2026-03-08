@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="expect" />
+    <link href="../../shared/styles/style.css" rel="stylesheet" />
+    <link href="../style/style.css" rel="stylesheet" />
+    <link href="../style/view-transition.css" rel="stylesheet" />
+    <link
+      href="../../shared/icons/favicon.svg"
+      type="image/svg+xml"
+      rel="icon"
+    />
+    <title>Demos - Cross-document View Transition</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="layout__header header">
+        <div class="header__wrapper">
+          <h1 class="header__title">Cross-document View Transition</h1>
+          <a class="header__back" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../../shared/icons/sprite.svg#arrow-back"></use>
+            </svg>
+            <span>Go to Store</span>
+          </a>
+        </div>
+
+        <span>powered by luananxd</span>
+      </header>
+
+      <main class="layout__content user-profile">
+        <section class="user-profile__info user-info">
+          <div class="user-info__avatar">
+            <img
+              src="../images/user_2.png"
+              alt="Olivia Martinez's Avatar"
+              width="180"
+              height="180"
+            />
+          </div>
+
+          <div class="user-info__details">
+            <div class="user-info__header">
+              <h2 class="user-info__name">Olivia Martinez</h2>
+              <span class="user-info__nickname">@olivia_makeup_addict</span>
+            </div>
+
+            <p class="user-info__bio">
+              💄 Freelance makeup artist. ☕ Coffee addict. 🔄 Always testing
+              new products.
+            </p>
+
+            <dl class="user-info__stats">
+              <div class="user-info__stat">
+                <dt>Sex</dt>
+                <dd>Female</dd>
+              </div>
+
+              <div class="user-info__stat">
+                <dt>Age</dt>
+                <dd>28 years</dd>
+              </div>
+
+              <div class="user-info__stat">
+                <dt>Reviews</dt>
+                <dd>2 reviews</dd>
+              </div>
+
+              <div class="user-info__stat">
+                <dt>Last activity</dt>
+                <dd>1 week ago</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <hr class="user-profile__divider" />
+
+        <section class="user-profile__purchases user-purchases">
+          <h2 class="user-purchases__title">Purchases</h2>
+
+          <ul class="user-purchases__list">
+            <li class="user-purchases__item">
+              <article class="good-recommendations__card good-card">
+                <div class="good-card__top">
+                  <img
+                    class="good-card__image"
+                    src="../images/good_1.jpg"
+                    alt="Shampoo"
+                    width="230"
+                    height="230"
+                  />
+                  <h3 class="good-card__title">Shampoo</h3>
+                </div>
+                <div class="good-card__info">
+                  <p class="good-card__description">
+                    A moisturizing shampoo with natural coconut oil to nourish
+                    dry hair
+                  </p>
+
+                  <div class="good-card__footer">
+                    <a
+                      class="good-card__button default-button"
+                      href="./good-1.html"
+                    >
+                      More info
+                    </a>
+
+                    <span class="good-card__price">
+                      <span class="good-card__new-price">$8.99</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="user-purchases__item">
+              <article class="good-recommendations__card good-card">
+                <div class="good-card__top">
+                  <img
+                    class="good-card__image"
+                    src="../images/good_5.jpg"
+                    alt="Coffee Beans"
+                    width="230"
+                    height="230"
+                  />
+                  <h3 class="good-card__title">Coffee Beans</h3>
+                </div>
+                <div class="good-card__info">
+                  <p class="good-card__description">
+                    Medium roast Arabica coffee beans with notes of caramel and
+                    milk chocolate.
+                  </p>
+
+                  <div class="good-card__footer">
+                    <a
+                      class="good-card__button default-button"
+                      href="./good-5.html"
+                    >
+                      More info
+                    </a>
+
+                    <span class="good-card__price">
+                      <span class="good-card__new-price">$5.49</span>
+                      <span class="good-card__old-price">$6.99</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+
+  <script src="../script.js"></script>
+</html>

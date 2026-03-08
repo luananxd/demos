@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="expect" />
+    <link href="../../shared/styles/style.css" rel="stylesheet" />
+    <link href="../style/style.css" rel="stylesheet" />
+    <link href="../style/view-transition.css" rel="stylesheet" />
+    <link
+      href="../../shared/icons/favicon.svg"
+      type="image/svg+xml"
+      rel="icon"
+    />
+    <title>Demos - Cross-document View Transition</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="layout__header header">
+        <div class="header__wrapper">
+          <h1 class="header__title">Cross-document View Transition</h1>
+          <a class="header__back" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../../shared/icons/sprite.svg#arrow-back"></use>
+            </svg>
+            <span>Go to Store</span>
+          </a>
+        </div>
+
+        <span>powered by luananxd</span>
+      </header>
+
+      <main class="layout__content good-page">
+        <section class="good-page__about good-about">
+          <div class="good-about__image">
+            <img src="../images/good_3.jpg" alt="Cereal" />
+
+            <div class="good-about__thumbnails">
+              <img src="../images/good_3.jpg" alt="Cereal thumbnail" />
+              <img src="../images/good_3.jpg" alt="Cereal thumbnail" />
+              <img src="../images/good_3.jpg" alt="Cereal thumbnail" />
+            </div>
+          </div>
+
+          <div class="good-about__details">
+            <div class="good-about__header">
+              <h2 class="good-about__title">Cereal</h2>
+
+              <div class="good-about__availability">
+                <span class="good-about__product-code">
+                  Product Code: <strong>CR-STB-3415</strong> —
+                </span>
+                <span class="good-about__quantity good-about__quantity--large">
+                  210 pcs.
+                </span>
+              </div>
+            </div>
+
+            <span class="good-about__price">
+              <span class="good-about__new-price">$4.79</span>
+            </span>
+
+            <p class="good-about__description">
+              Crunchy whole grain flakes with real strawberries, perfect for a
+              healthy breakfast.
+            </p>
+
+            <dl class="good-about__characteristics">
+              <div class="good-about__characteristic">
+                <dt>Origin Country</dt>
+                <dd>Germany</dd>
+              </div>
+
+              <div class="good-about__characteristic">
+                <dt>Manufacturer</dt>
+                <dd>Morning Fields GmbH</dd>
+              </div>
+
+              <div class="good-about__characteristic">
+                <dt>Volume</dt>
+                <dd>375 ml (approx. box size)</dd>
+              </div>
+
+              <div class="good-about__characteristic">
+                <dt>Net Weight</dt>
+                <dd>300 g</dd>
+              </div>
+            </dl>
+
+            <button class="good-page__button default-button" type="button">
+              Add to Cart
+            </button>
+
+            <div class="good-page__share good-share">
+              <small class="good-share__title">Share</small>
+              <ul class="good-share__list">
+                <li class="good-share__item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                  >
+                    <use
+                      href="../../shared/icons/logos.svg#facebook-messenger"
+                    ></use>
+                  </svg>
+                </li>
+
+                <li class="good-share__item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="../../shared/icons/logos.svg#x"></use>
+                  </svg>
+                </li>
+
+                <li class="good-share__item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="../../shared/icons/logos.svg#telegram"></use>
+                  </svg>
+                </li>
+
+                <li class="good-share__item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="../../shared/icons/logos.svg#threads"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="good-page__recommendations good-recommendations">
+          <h2 class="good-recommendations__title">Recommendations</h2>
+
+          <ul class="good-recommendations__list">
+            <li class="good-recommendations__item">
+              <article class="good-recommendations__card good-card">
+                <div class="good-card__top">
+                  <img
+                    class="good-card__image"
+                    src="../images/good_1.jpg"
+                    alt="Shampoo"
+                    width="230"
+                    height="230"
+                  />
+                  <h3 class="good-card__title">Shampoo</h3>
+                </div>
+                <div class="good-card__info">
+                  <p class="good-card__description">
+                    A moisturizing shampoo with natural coconut oil to nourish
+                    dry hair
+                  </p>
+
+                  <div class="good-card__footer">
+                    <a
+                      class="good-card__button default-button"
+                      href="./good-1.html"
+                    >
+                      More info
+                    </a>
+
+                    <span class="good-card__price">
+                      <span class="good-card__new-price">$8.99</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="good-recommendations__item">
+              <article class="good-recommendations__card good-card">
+                <div class="good-card__top">
+                  <img
+                    class="good-card__image"
+                    src="../images/good_2.jpg"
+                    alt="Ice Cream"
+                    width="230"
+                    height="230"
+                  />
+                  <h3 class="good-card__title">Ice Cream</h3>
+                </div>
+                <div class="good-card__info">
+                  <p class="good-card__description">
+                    Rich and creamy vanilla bean ice cream made with fresh cream
+                    and Madagascar vanilla.
+                  </p>
+
+                  <div class="good-card__footer">
+                    <a
+                      class="good-card__button default-button"
+                      href="./good-2.html"
+                    >
+                      More info
+                    </a>
+
+                    <span class="good-card__price">
+                      <span class="good-card__new-price">$5.49</span>
+                      <small class="good-card__old-price">$6.99</small>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="good-recommendations__item">
+              <article class="good-recommendations__card good-card">
+                <div class="good-card__top">
+                  <img
+                    class="good-card__image"
+                    src="../images/good_4.jpg"
+                    alt="Snack Bars"
+                    width="230"
+                    height="230"
+                  />
+                  <h3 class="good-card__title">Snack Bars</h3>
+                </div>
+                <div class="good-card__info">
+                  <p class="good-card__description">
+                    Soft-baked oat bars with dark chocolate chips and a hint of
+                    sea salt.
+                  </p>
+
+                  <div class="good-card__footer">
+                    <a
+                      class="good-card__button default-button"
+                      href="./good-4.html"
+                    >
+                      More info
+                    </a>
+
+                    <span class="good-card__price">
+                      <span class="good-card__new-price">$6.99</span>
+                      <small class="good-card__old-price">$8.49</small>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="good-recommendations__item">
+              <article class="good-recommendations__card good-card">
+                <div class="good-card__top">
+                  <img
+                    class="good-card__image"
+                    src="../images/good_5.jpg"
+                    alt="Coffee Beans"
+                    width="230"
+                    height="230"
+                  />
+                  <h3 class="good-card__title">Coffee Beans</h3>
+                </div>
+                <div class="good-card__info">
+                  <p class="good-card__description">
+                    Medium roast Arabica coffee beans with notes of caramel and
+                    milk chocolate.
+                  </p>
+
+                  <div class="good-card__footer">
+                    <a
+                      class="good-card__button default-button"
+                      href="./good-5.html"
+                    >
+                      More info
+                    </a>
+
+                    <span class="good-card__price">
+                      <span class="good-card__new-price">$14.99</span>
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section class="good-page__reviews good-reviews">
+          <div class="good-reviews__header">
+            <h2 class="good-reviews__title">Reviews</h2>
+
+            <div class="good-reviews__rating good-rating">
+              <strong class="good-rating__total">4</strong>
+              <svg
+                class="good-rating__star good-rating__star--active"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+              >
+                <use href="../../shared/icons/sprite.svg#star"></use>
+              </svg>
+              <svg
+                class="good-rating__star good-rating__star--active"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+              >
+                <use href="../../shared/icons/sprite.svg#star"></use>
+              </svg>
+              <svg
+                class="good-rating__star good-rating__star--active"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+              >
+                <use href="../../shared/icons/sprite.svg#star"></use>
+              </svg>
+              <svg
+                class="good-rating__star good-rating__star--active"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+              >
+                <use href="../../shared/icons/sprite.svg#star"></use>
+              </svg>
+              <svg
+                class="good-rating__star"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+              >
+                <use href="../../shared/icons/sprite.svg#star"></use>
+              </svg>
+            </div>
+          </div>
+
+          <ul class="good-reviews__list">
+            <li class="good-review__item good-review">
+              <div class="good-review__header">
+                <div class="good-review__author">
+                  <img
+                    class="good-review__author-image"
+                    src="../images/user_7.png"
+                    alt=" Sophia Chen's Avatar"
+                    width="48"
+                    height="48"
+                  />
+
+                  <a class="good-review__author-name" href="./user-7.html">
+                    Sophia Chen
+                  </a>
+                </div>
+
+                <time datetime="2026-03-03 19:00">5 days ago</time>
+              </div>
+
+              <h3 class="good-review__title">
+                My kids actually eat breakfast now
+              </h3>
+
+              <p class="good-review__text">
+                Finally a cereal they love that isn't loaded with sugar. The
+                strawberry pieces are a hit.
+              </p>
+
+              <div class="good-review__rating good-rating good-rating--small">
+                <strong class="good-rating__total">5</strong>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="good-review__item good-review">
+              <div class="good-review__header">
+                <div class="good-review__author">
+                  <img
+                    class="good-review__author-image"
+                    src="../images/user_8.png"
+                    alt="Noah Williams's Avatar"
+                    width="48"
+                    height="48"
+                  />
+
+                  <a class="good-review__author-name" href="./user-8.html">
+                    Noah Williams
+                  </a>
+                </div>
+
+                <time datetime="2026-03-03 19:00">2 weeks ago</time>
+              </div>
+
+              <h3 class="good-review__title">Crunchy indeed</h3>
+
+              <p class="good-review__text">
+                Stays crunchy even after a few minutes in milk. Good flavor but
+                could use more strawberries.
+              </p>
+
+              <div class="good-review__rating good-rating good-rating--small">
+                <strong class="good-rating__total">4</strong>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="good-review__item good-review">
+              <div class="good-review__header">
+                <div class="good-review__author">
+                  <img
+                    class="good-review__author-image"
+                    src="../images/user_4.png"
+                    alt="James Peterson's Avatar"
+                    width="48"
+                    height="48"
+                  />
+
+                  <a class="good-review__author-name" href="./user-4.html">
+                    James Peterson
+                  </a>
+                </div>
+
+                <time datetime="2026-02-22 19:00">3 weeks ago</time>
+              </div>
+
+              <h3 class="good-review__title">Decent but overpriced</h3>
+
+              <p class="good-review__text">
+                Tastes good but half the box is air. Expected more for the
+                price.
+              </p>
+
+              <div class="good-review__rating good-rating good-rating--small">
+                <strong class="good-rating__total">3</strong>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star good-rating__star--active"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+                <svg
+                  class="good-rating__star"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                >
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+
+  <script src="../script.js"></script>
+</html>

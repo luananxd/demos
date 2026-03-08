@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="expect" />
+    <link href="../shared/styles/style.css" rel="stylesheet" />
+    <link href="../shared/styles/view-transition.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link href="../shared/icons/favicon.svg" type="image/svg+xml" rel="icon" />
+    <title>Demos - View Transition Dialog</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="layout__header header">
+        <div class="header__wrapper">
+          <h1 class="header__title">View Transition Dialog</h1>
+          <a class="header__back" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#arrow-back"></use>
+            </svg>
+            <span>Go to Home</span>
+          </a>
+        </div>
+
+        <span>powered by luananxd</span>
+      </header>
+
+      <main class="layout__content gallery">
+        <div class="gallery__item">
+          <img
+            class="gallery__image"
+            src="./images/dog_1.jpg"
+            alt="Doggie"
+            width="315"
+            height="200"
+          />
+          <button class="gallery__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#open-fullscreen"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="gallery__item">
+          <img
+            class="gallery__image"
+            src="./images/dog_2.jpg"
+            alt="Doggie"
+            width="315"
+            height="200"
+          />
+          <button class="gallery__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#open-fullscreen"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="gallery__item">
+          <img
+            class="gallery__image"
+            src="./images/dog_3.jpg"
+            alt="Doggie"
+            width="315"
+            height="200"
+          />
+          <button class="gallery__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#open-fullscreen"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="gallery__item">
+          <img
+            class="gallery__image"
+            src="./images/dog_4.jpg"
+            alt="Doggie"
+            width="315"
+            height="200"
+          />
+          <button class="gallery__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#open-fullscreen"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="gallery__item">
+          <img
+            class="gallery__image"
+            src="./images/dog_5.jpg"
+            alt="Doggie"
+            width="315"
+            height="200"
+          />
+          <button class="gallery__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#open-fullscreen"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="gallery__item">
+          <img
+            class="gallery__image"
+            src="./images/dog_6.jpg"
+            alt="Doggie"
+            width="315"
+            height="200"
+          />
+          <button class="gallery__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#open-fullscreen"></use>
+            </svg>
+          </button>
+        </div>
+
+        <dialog class="gallery__fullscreen" closedby="any">
+          <img
+            class="gallery__image"
+            src="./images/dog_2.jpg"
+            alt="Doggie Fullscreen"
+            width="800"
+            height="500"
+          />
+          <button class="gallery__button" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#close-fullscreen"></use>
+            </svg>
+          </button>
+        </dialog>
+      </main>
+    </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
