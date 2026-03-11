@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="expect" />
+    <link href="../shared/styles/style.css" rel="stylesheet" />
+    <link href="../shared/styles/view-transition.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link href="../shared/icons/favicon.svg" type="image/svg+xml" rel="icon" />
+    <title>Demos - View Transition List</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="layout__header header">
+        <div class="header__wrapper">
+          <h1 class="header__title">View Transition List</h1>
+          <a class="header__back" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#arrow-back"></use>
+            </svg>
+            <span>Go to Home</span>
+          </a>
+        </div>
+
+        <span>powered by luananxd</span>
+      </header>
+
+      <main class="layout__content colors">
+        <button class="colors__add" type="button">
+          <svg width="24" height="24">
+            <use href="../shared/icons/sprite.svg#add"></use>
+          </svg>
+        </button>
+
+        <ul class="colors__list"></ul>
+      </main>
+
+      <footer class="layout__footer footer">
+        <h2 class="footer__title">Useful links</h2>
+
+        <ul class="footer__resources">
+          <li class="footer__resource">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/View_Transition_API"
+            >
+              View Transition API (MDN)
+            </a>
+          </li>
+
+          <li class="footer__resource">
+            <a
+              href="https://developer.chrome.com/docs/web-platform/view-transitions/same-document#changing-on-navigation-type"
+            >
+              Same-document view transitions for single-page applications
+              (Chrome for developers)
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+
+  <script src="./scripts/main.js" type="module"></script>
+</html>

@@ -1,0 +1,156 @@
+.colors__add {
+  display: block;
+  margin: 0 auto 36px auto;
+  width: 36px;
+  height: 36px;
+  color: White;
+  background-color: CornFlowerBlue;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.colors__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  min-height: 300px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.colors__item {
+  position: relative;
+  width: 200px;
+  height: 300px;
+
+  view-transition-class: color;
+}
+
+.colors__delete {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: block;
+  width: 36px;
+  height: 36px;
+  color: Black;
+  background-color: White;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* View Transition */
+
+:root {
+  --bouncing: linear(
+    0,
+    0.004,
+    0.016,
+    0.035,
+    0.063,
+    0.098,
+    0.141 13.6%,
+    0.25,
+    0.391,
+    0.563,
+    0.765,
+    1,
+    0.891 40.9%,
+    0.848,
+    0.813,
+    0.785,
+    0.766,
+    0.754,
+    0.75,
+    0.754,
+    0.766,
+    0.785,
+    0.813,
+    0.848,
+    0.891 68.2%,
+    1 72.7%,
+    0.973,
+    0.953,
+    0.941,
+    0.938,
+    0.941,
+    0.953,
+    0.973,
+    1,
+    0.988,
+    0.984,
+    0.988,
+    1
+  );
+}
+
+::view-transition {
+  pointer-events: none;
+}
+
+/*
+  Если не хочется применять к только что добавленой карточке,
+  выносим в отдельный слой
+*/
+::view-transition-group(.color) {
+  animation-timing-function: var(--bouncing);
+  animation-duration: 0.5s;
+}
+
+::view-transition-group(active-card) {
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+}
+
+::view-transition-new(active-card):only-child {
+  animation-name: card-in;
+}
+
+::view-transition-old(active-card):only-child {
+  animation-name: card-out;
+}
+
+@layer add-card {
+}
+
+@keyframes card-in {
+  from {
+    translate: 0 -100px;
+    opacity: 0;
+  }
+
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+@keyframes card-out {
+  from {
+    translate: 0 0;
+    opacity: 1;
+  }
+
+  to {
+    translate: 0 -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 20px 0;
+  }
+
+  100% {
+    translate: 0 0;
+  }
+}

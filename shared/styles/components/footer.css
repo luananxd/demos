@@ -1,0 +1,30 @@
+.footer {
+  padding: 16px 24px;
+  color: White;
+  background-color: CornflowerBlue;
+}
+
+.footer__title {
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.footer__resources {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer__resource {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  & a {
+    color: White;
+
+    &:visited {
+      color: White;
+    }
+  }
+}
