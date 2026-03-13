@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="expect" />
+    <link href="../shared/styles/style.css" rel="stylesheet" />
+    <link href="../shared/styles/view-transition.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="../shared/icons/favicon.svg" type="image/svg+xml" rel="icon" />
+    <title>Demos - CSS Color Spaces</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="layout__header header">
+        <div class="header__wrapper">
+          <h1 class="header__title">CSS Color Spaces</h1>
+          <a class="header__back" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#arrow-back"></use>
+            </svg>
+            <span>Go to Home</span>
+          </a>
+        </div>
+
+        <span>powered by luananxd</span>
+      </header>
+
+      <main class="layout__content colors">
+        <h2 class="colors__title">Color Functions</h2>
+        <ul class="colors__list"></ul>
+
+        <h2 class="colors__title">Contrast Color</h2>
+        <p class="colors__text">
+          Note the CSS color function value label. It changes color depending on
+          the background color. Unfortunately, the alpha channel doesn't affect
+          the text color.
+        </p>
+        <div class="colors__contrast"></div>
+
+        <dialog class="colors__dialog color-space" closedby="any">
+          <div class="color-space__blur"></div>
+          <img
+            class="color-space__image"
+            src="#"
+            alt=""
+            width="800"
+            height="500"
+          />
+
+          <button class="color-space__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+              <use href="../shared/icons/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </dialog>
+      </main>
+
+      <footer class="layout__footer footer">
+        <h2 class="footer__title">Useful links</h2>
+
+        <ul class="footer__resources">
+          <li class="footer__resource">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Colors"
+            >
+              CSS Colors (MDN)
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+
+  <template id="color-card">
+    <li class="colors__item color-card">
+      <div class="color-card__preview">
+        <span class="color-card__info">
+          <span>RGBA</span>
+          <output>(86, 42, 82, 1)</output>
+        </span>
+
+        <button class="color-card__graph">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+            <use href="../shared/icons/sprite.svg#target"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="color-card__parameters"></div>
+    </li>
+  </template>
+
+  <template id="color-slider">
+    <div class="color-card__parameter">
+      <span class="color-card__channel">R</span>
+      <input
+        class="color-card__range"
+        type="range"
+        value="86"
+        min="0"
+        max="255"
+        step="1"
+      />
+    </div>
+  </template>
+
+  <script src="./scripts/main.js" type="module"></script>
+</html>

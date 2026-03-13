@@ -1,0 +1,78 @@
+.color-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px 0 rgba(25, 25, 112, 0.15);
+}
+
+.color-card__preview {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.color-card__graph {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  background-color: White;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+
+  & > svg {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    min-height: 24px;
+  }
+}
+
+.color-card__info {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  color: White;
+  text-transform: uppercase;
+  letter-spacing: 10%;
+}
+
+.color-card__parameters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background-color: White;
+}
+
+.color-card__parameter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.color-card__channel {
+  font-weight: 700;
+  cursor: help;
+}
+
+.color-card__range {
+  flex-grow: 1;
+  appearance: none;
+  accent-color: CornFlowerBlue;
+
+  &::-webkit-slider-runnable-track {
+    background-color: LightGray;
+    border-radius: 999px;
+  }
+
+  &::-webkit-slider-thumb {
+    background-color: CornFlowerBlue;
+  }
+}
