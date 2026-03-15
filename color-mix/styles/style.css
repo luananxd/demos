@@ -1,0 +1,6 @@
+@import "./mixer.css";
+
+.color-mix__title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}

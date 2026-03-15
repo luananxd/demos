@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="expect" />
+    <link href="../shared/styles/style.css" rel="stylesheet" />
+    <link href="../shared/styles/view-transition.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="../shared/icons/favicon.svg" type="image/svg+xml" rel="icon" />
+    <title>Demos - CSS Color Spaces</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="layout__header header">
+        <div class="header__wrapper">
+          <h1 class="header__title">CSS Color Spaces</h1>
+          <a class="header__back" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#arrow-back"></use>
+            </svg>
+            <span>Go to Home</span>
+          </a>
+        </div>
+
+        <span>powered by luananxd</span>
+      </header>
+
+      <main class="layout__content color-mix">
+        <h2 class="color-mix__title">Mixer</h2>
+
+        <div class="color-mix__mixer mixer">
+          <div class="mixer__preview">
+            <div class="mixer__palette mixer__palette--first">
+              <input
+                id="palette-1"
+                class="mixer__input"
+                type="color"
+                value="Lime"
+              />
+              <span class="mixer__caption">First Color</span>
+            </div>
+
+            <div class="mixer__result">
+              <span class="mixer__caption">First Color</span>
+            </div>
+
+            <div class="mixer__palette mixer__palette--second">
+              <span class="mixer__caption">Second Color</span>
+              <input
+                id="palette-2"
+                class="mixer__input"
+                type="color"
+                value="Orange"
+              />
+            </div>
+          </div>
+
+          <div class="mixer__fractions">
+            <div class="mixer__fraction">
+              <output id="fraction-value-1">50%</output>
+              <input
+                type="range"
+                id="fraction-1"
+                value="50"
+                min="0"
+                max="100"
+                step="0.1"
+              />
+            </div>
+
+            <div class="mixer__fraction">
+              <output id="fraction-value-2">50%</output>
+              <input
+                type="range"
+                id="fraction-2"
+                value="50"
+                min="0"
+                max="100"
+                step="0.1"
+              />
+            </div>
+          </div>
+
+          <div class="mixer__settings">
+            <div class="mixer__setting">
+              <span>Color Space:</span>
+              <div class="mixer__select">
+                <select id="color-space">
+                  <optgroup label="Rectangular Spaces">
+                    <option value="srgb">srgb</option>
+                    <option value="srgb-linear">srgb-linear</option>
+                    <option value="display-p3">display-p3</option>
+                    <option value="a98-rgb">a98-rgb</option>
+                    <option value="rec2020">rec2020</option>
+                    <option value="lab">lab</option>
+                    <option value="oklab">oklab</option>
+                    <option value="xyz">xyz</option>
+                    <option value="xyz-d50">xyz-d50</option>
+                    <option value="xyz-d65">xyz-d65</option>
+                  </optgroup>
+
+                  <optgroup label="Polar Spaces">
+                    <option value="hsl">hsl</option>
+                    <option value="hwb">hwb</option>
+                    <option value="lch">lch</option>
+                    <option value="oklch">oklch</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+            <div class="mixer__setting">
+              <span>Interpolation Method:</span>
+              <div class="mixer__select">
+                <select id="interpolation" disabled>
+                  <option value="shorter hue">shorter hue</option>
+                  <option value="longer hue">longer hue</option>
+                  <option value="increasing hue">increasing hue</option>
+                  <option value="decreasing hue">decreasing hue</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="layout__footer footer">
+        <h2 class="footer__title">Useful links</h2>
+
+        <ul class="footer__resources">
+          <li class="footer__resource">
+            <a href="https://doka.guide/css/color-mix/"> color-mix() (Дока) </a>
+          </li>
+
+          <li class="footer__resource">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/color-mix"
+            >
+              color-mix() (MDN)
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script src="./scripts/script.js" type="module"></script>
+  </body>
+</html>
