@@ -1,0 +1,27 @@
+@import url('./card.css');
+
+.properties {
+  padding: 120px 16px;
+}
+
+.properties__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.properties__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: left;
+  gap: 40px;
+}
+
+.properties__buttons {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}

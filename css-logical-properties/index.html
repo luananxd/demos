@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="expect" />
+    <link href="../shared/styles/style.css" rel="stylesheet" />
+    <link href="../shared/styles/view-transition.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="../shared/icons/favicon.svg" type="image/svg+xml" rel="icon" />
+    <title>Demos - CSS Logical Properties</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="layout__header header">
+        <div class="header__wrapper">
+          <h1 class="header__title">CSS Logical Properties</h1>
+          <a class="header__back" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#arrow-back"></use>
+            </svg>
+            <span>Go to Home</span>
+          </a>
+        </div>
+
+        <span>powered by luananxd</span>
+      </header>
+
+      <main class="layout__content properties">
+        <div class="properties__cards">
+          <div class="properties__column">
+            <b style="color: crimson">WRONG</b>
+            <article class="properties__card card card--wrong">
+              <div class="card__content">
+                <h2 class="card__title">CRM Layout Draft</h2>
+                <p class="card__description">
+                  Designing the basic structure of the CRM dashboard. Focus on
+                  organizing good user experience
+                </p>
+
+                <div class="card__information">
+                  <div class="card__members">
+                    <img
+                      class="card__avatar"
+                      src="./assets/avatar_1.png"
+                      width="40"
+                      height="40"
+                    />
+                    <img
+                      class="card__avatar"
+                      src="./assets/avatar_2.png"
+                      width="40"
+                      height="40"
+                    />
+                    <img
+                      class="card__avatar"
+                      src="./assets/avatar_3.png"
+                      width="40"
+                      height="40"
+                    />
+                    <img
+                      class="card__avatar"
+                      src="./assets/avatar_4.png"
+                      width="40"
+                      height="40"
+                    />
+                  </div>
+                  <small class="card__status">In progress</small>
+                </div>
+              </div>
+
+              <div class="card__footer">
+                <div class="card__tools">
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="../../shared/icons/sprite.svg#chat"></use>
+                    </svg>
+                    <span>8</span>
+                  </div>
+
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="../../shared/icons/sprite.svg#link"></use>
+                    </svg>
+                    <span>4</span>
+                  </div>
+
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="../../shared/icons/sprite.svg#folder"></use>
+                    </svg>
+                    <span>12</span>
+                  </div>
+                </div>
+
+                <data datetime="2026-06-02">June, 2</data>
+              </div>
+
+              <span class="card__priority">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+              </span>
+            </article>
+          </div>
+
+          <div class="properties__column">
+            <b style="color: green">CORRECT</b>
+            <article class="properties__card card card--right">
+              <div class="card__content">
+                <h2 class="card__title">CRM Layout Draft</h2>
+                <p class="card__description">
+                  Designing the basic structure of the CRM dashboard. Focus on
+                  organizing good user experience
+                </p>
+
+                <div class="card__information">
+                  <div class="card__members">
+                    <img
+                      class="card__avatar"
+                      src="./assets/avatar_1.png"
+                      width="40"
+                      height="40"
+                    />
+                    <img
+                      class="card__avatar"
+                      src="./assets/avatar_2.png"
+                      width="40"
+                      height="40"
+                    />
+                    <img
+                      class="card__avatar"
+                      src="./assets/avatar_3.png"
+                      width="40"
+                      height="40"
+                    />
+                    <img
+                      class="card__avatar"
+                      src="./assets/avatar_4.png"
+                      width="40"
+                      height="40"
+                    />
+                  </div>
+                  <small class="card__status">In progress</small>
+                </div>
+              </div>
+
+              <div class="card__footer">
+                <div class="card__tools">
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="../../shared/icons/sprite.svg#chat"></use>
+                    </svg>
+                    <span>8</span>
+                  </div>
+
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="../../shared/icons/sprite.svg#link"></use>
+                    </svg>
+                    <span>4</span>
+                  </div>
+
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                    >
+                      <use href="../../shared/icons/sprite.svg#folder"></use>
+                    </svg>
+                    <span>12</span>
+                  </div>
+                </div>
+
+                <data datetime="2026-06-02">June, 2</data>
+              </div>
+
+              <span class="card__priority">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                  <use href="../../shared/icons/sprite.svg#star"></use>
+                </svg>
+              </span>
+            </article>
+          </div>
+        </div>
+
+        <div class="properties__buttons">
+          <button id="english" type="button" class="default-button">
+            Set English
+          </button>
+          <button id="hebrew" type="button" class="default-button">
+            Set Hebrew
+          </button>
+          <button id="chinese" type="button" class="default-button">
+            Set Chinese
+          </button>
+        </div>
+      </main>
+
+      <footer class="layout__footer footer">
+        <h2 class="footer__title">Useful links</h2>
+
+        <ul class="footer__resources">
+          <li class="footer__resource">
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Logical_properties_and_values"
+            >
+              CSS Logical Properties (MDN)
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+
+  <script src="./scripts/main.js" type="module"></script>
+</html>
