@@ -1,0 +1,25 @@
+.gallery {
+  background-color: white;
+}
+
+.gallery__title {
+  margin-block-end: 16px;
+}
+
+.gallery__grid img {
+  width: calc(25% - 6px);
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+@supports(display: grid-lanes) {
+  .gallery__grid {
+    display: grid-lanes;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  .gallery__grid img {
+    width: 100%;
+  }
+}
