@@ -1,5 +1,5 @@
 .layout {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   background-color: White;
   box-shadow: 0 0 10px 0 rgba(25, 25, 112, 0.25);

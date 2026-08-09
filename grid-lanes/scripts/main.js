@@ -1,7 +1,3 @@
-
-// Without Masonry: 4.22 Kb
-// With Masonry: 4.22 + 16.4 Kb
-
 function loadScript(src) {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script')
