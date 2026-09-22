@@ -1,0 +1,17 @@
+.table {
+  width: 100%;
+  background-color: White;
+  border-collapse: collapse;
+  box-shadow: 0 0 4px 0 rgba(25, 25, 112, 0.15);
+}
+
+.table__header {
+  color: White;
+  background-color: CornflowerBlue;
+}
+
+.table__header th,
+.table__body td {
+  padding: 12px 8px;
+  text-align: left;
+}

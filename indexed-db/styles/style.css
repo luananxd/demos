@@ -1,0 +1,42 @@
+@import "./table.css";
+
+.goods__filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 12px;
+  background-color: White;
+  box-shadow: 0 0 4px 0 rgba(25, 25, 112, 0.15);
+}
+
+.goods__search {
+  width: 200px;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid LightGray;
+  border-radius: 0;
+}
+
+.goods__min-price,
+.goods__max-price {
+  width: 120px;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid LightGray;
+  border-radius: 0;
+  appearance: textfield;
+}
+
+.goods__min-price::-webkit-outer-spin-button,
+.goods__min-price::-webkit-inner-spin-button,
+.goods__max-price::-webkit-outer-spin-button,
+.goods__max-price::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.goods__reset {
+  border-radius: 0;
+}

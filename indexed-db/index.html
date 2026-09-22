@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="expect" />
+    <link href="../shared/styles/style.css" rel="stylesheet" />
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="../shared/icons/favicon.svg" type="image/svg+xml" rel="icon" />
+    <title>Demos - Indexed DB</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header class="layout__header header">
+        <div class="header__wrapper">
+          <h1 class="header__title">Indexed DB</h1>
+          <a class="header__back" href="../index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <use href="../shared/icons/sprite.svg#arrow-back"></use>
+            </svg>
+            <span>Go to Home</span>
+          </a>
+        </div>
+
+        <span>powered by luananxd</span>
+      </header>
+
+      <main class="layout__content goods">
+        <form class="goods__filter" data-el="filters">
+          <input
+            class="goods__search"
+            placeholder="Enter the title"
+            minlength="3"
+            data-el="search"
+          />
+
+          <input
+            class="goods__min-price"
+            type="number"
+            placeholder="Min. price"
+            min="0"
+            data-el="min-price"
+          />
+
+          <input
+            class="goods__max-price"
+            type="number"
+            placeholder="Max. number"
+            min="0"
+            data-el="max-price"
+          />
+
+          <button
+            class="goods__reset default-button"
+            type="clear"
+            data-el="reset"
+          >
+            Reset
+          </button>
+        </form>
+
+        <table class="goods__table table" data-el="table">
+          <colgroup>
+            <col style="width: 40px" />
+            <col style="width: 40px" />
+            <col style="width: 250px" />
+            <col style="width: 120px" />
+            <col style="width: 400px" />
+            <col style="width: 120px" />
+          </colgroup>
+
+          <thead class="table__header" data-el="table-header">
+            <tr>
+              <th>ID</th>
+              <th></th>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+
+          <tbody class="table__body" data-el="table-body"></tbody>
+        </table>
+      </main>
+
+      <footer class="layout__footer footer">
+        <h2 class="footer__title">Useful links</h2>
+
+        <ul class="footer__resources"></ul>
+      </footer>
+    </div>
+  </body>
+
+  <script src="./scripts/main.js" type="module"></script>
+</html>

@@ -88,6 +88,7 @@
 @container (width < 150px) {
   .card__icon {
     padding: 0;
+    aspect-ratio: 1 / 0.5;
   }
 
   .card__favorite {
